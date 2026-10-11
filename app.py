@@ -96,10 +96,11 @@ st.header("1. Predict Traffic")
 
 road = st.selectbox("Select road", roads)
 
-prediction_time = st.datetime_input(
-    "Prediction date and time",
-    value=datetime.now()
+prediction_clock = st.time_input(
+    "Prediction time",
+    value=datetime.now().time().replace(second=0, microsecond=0)
 )
+
 
 speed = st.number_input(
     "Latest observed speed (km/h)",
