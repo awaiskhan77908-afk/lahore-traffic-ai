@@ -102,12 +102,15 @@ prediction_clock = st.time_input(
 )
 
 
+
 speed = st.number_input(
     "Latest observed speed (km/h)",
     min_value=0.0,
     max_value=150.0,
-    value=30.0
+    value=30.0,
+    key="latest_observed_speed"
 )
+
 
 if st.button("Predict Traffic"):
     input_data = pd.DataFrame([{
