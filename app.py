@@ -9,7 +9,7 @@ st.set_page_config(page_title="Lahore Traffic AI", page_icon="🚦")
 st.title("Lahore Traffic AI")
 st.subheader("Traffic Congestion Prediction System")
 
-model_path = Path(__file__).parent / "model_path = Path(__file__).parent / "traffic_model (1).joblib""
+model_path = Path(__file__).parent /  "traffic_model (1).joblib""
 
 if not model_path.exists():
     st.error("traffic_model.joblib file missing hai.")
