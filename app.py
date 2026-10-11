@@ -112,7 +112,9 @@ speed = st.number_input(
 )
 
 
-if st.button("Predict Traffic"):
+
+if st.button("Predict Traffic", key="predict_traffic_button"):
+
     input_data = pd.DataFrame([{
         "hour": prediction_time.hour,
         "day_of_week": prediction_time.weekday(),
